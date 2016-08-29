@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cat Meter</string>
+    <string name="refresh">Refresh</string>
 </resources>
