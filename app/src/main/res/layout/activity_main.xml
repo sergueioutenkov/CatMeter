@@ -3,13 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.serguei.catmeter.MainActivity">
+    tools:context=".catfactslist.CatFactsListActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/cat_facts_list"
         android:layout_width="match_parent"
         tools:listitem="@layout/cat_fact_list_item"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
     </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminate="true" />
 </RelativeLayout>

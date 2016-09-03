@@ -1,6 +1,6 @@
-package com.serguei.catmeter.service;// Created by Serguei Outenkov on 8/28/16.
+package com.serguei.catmeter.catfactslist.service;// Created by Serguei Outenkov on 8/28/16.
 
-import com.serguei.catmeter.model.CatFactsResponse;
+import com.serguei.catmeter.catfactslist.model.CatFactsResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -13,6 +13,7 @@ public interface CatFactsAPI {
 
     /**
      * Método que obtiene la lista de curiosidades de los gatos
+     * Ejemplo URL: http://catfacts-api.appspot.com/api/facts?number=5
      *
      * @param number
      * @return
